@@ -1,8 +1,8 @@
 # main links
 # main links
 main:
-  #- title: "Quick-Start Guide"
-  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+   - title: "Home"
+    url: https://shivakhanal.github.io/
    - title: "About"
      # url: https://tinyurl.com/skoywnm
      url: https://www.westernsydney.edu.au/hie/people/postgraduate_students/current_postgraduate_students/shiva_khanal
