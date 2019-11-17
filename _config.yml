@@ -19,14 +19,14 @@ locale                   : "en-US"
 title                    : " "
 title_separator          : "-"
 header                   :
-     overlay_image: /image/mountain.png
+     overlay_image: mountain.png
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Shiva Khanal"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /image/mountain.jpg
+teaser                   : mountain.jpg
 logo                     : # path of logo image to displa in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
