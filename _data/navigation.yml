@@ -1,12 +1,13 @@
 # main links
 # main links
 main:
-   - title: "Home"
+   - title: "Quick-Start Guide"
      url: https://shivakhanal.github.io
    - title: "About"
      # url: https://tinyurl.com/skoywnm
      url: https://www.westernsydney.edu.au/hie/people/postgraduate_students/current_postgraduate_students/shiva_khanal
-  - title: "Sample Posts"
+   
+   - title: "Sample Posts"
   #   url: /year-archive/
    - title: "Sample Collections"
      url: https://google.com
