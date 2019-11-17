@@ -43,7 +43,7 @@ header:
 
 Or if you want to do more fancy things, go full rgba:
 
-![transparent red overlay]({{ '/assets/images/mm-header-overlay-red-filter.jpg' | relative_url }})
+![transparent red overlay]({{ '/assets/image/mountain.jpg' | relative_url }})
 
 ```yaml
 excerpt: "This post should [...]"
