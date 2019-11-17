@@ -28,7 +28,7 @@ This post tests overlay header images.
 
 You can use it by specifying the opacity (between 0 and 1) of a black overlay like so:
 
-![transparent black overlay]({{ '/assets/images/mm-header-overlay-black-filter.jpg' | relative_url }})
+![transparent black overlay]({{ '/assets/image/mountain.jpg' | relative_url }})
 
 ```yaml
 excerpt: "This post should [...]"
