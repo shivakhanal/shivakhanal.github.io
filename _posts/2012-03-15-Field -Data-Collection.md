@@ -28,7 +28,7 @@ This post tests overlay header images. 'assets/image/mountain.png'
 
 You can use it by specifying the opacity (between 0 and 1) of a black overlay like so:
 
-![transparent black overlay]({{ 'assets/image/DSC01270.JPG' | relative_url }})
+![transparent black overlay]({{ 'assets/image/DSC06732.png' | relative_url }})
 
 ```yaml
 excerpt: "This post should [...]"
@@ -43,7 +43,7 @@ header:
 
 Or if you want to do more fancy things, go full rgba:
 
-![transparent red overlay]({{ 'assets/image/DSC01270.JPG' | relative_url }})
+![transparent red overlay]({{ 'assets/image/DSC01270.png' | relative_url }})
 
 ```yaml
 excerpt: "This post should [...]"
