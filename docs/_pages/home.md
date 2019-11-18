@@ -11,7 +11,7 @@ excerpt: >
   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.2">Latest release v4.17.2</a></small>
 feature_row:
-  - image_path: assets/image/mountain.png
+  - image_path: /assets/image/mountain.png
     alt: "customizable"
     title: "Super customizable"
     excerpt: "Everything from menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
