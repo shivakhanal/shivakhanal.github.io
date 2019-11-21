@@ -20,6 +20,8 @@ title                    : " "
 title_separator          : "-"
 header:
  overlay_image           : "/assets/image/mountain.jpg"
+image:
+   feature: "/assets/image/feature_pine.jpg"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Shiva Khanal"
 description              : "An amazing website."
