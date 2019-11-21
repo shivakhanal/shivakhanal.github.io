@@ -2,7 +2,7 @@
 layout: single
 permalink: /
 image:
-   feature: "/assets/image/feature_pine.png"
+   feature: /assets/image/feature_pine.png
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/image/mountain.png
