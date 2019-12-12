@@ -5,7 +5,7 @@ image:
    feature: /assets/image/feature_pine.png
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/image/mountain.png
+  image: /assets/image/mountain.png
   actions:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "/docs/quick-start-guide/"
