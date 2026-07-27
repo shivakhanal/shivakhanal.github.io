@@ -22,7 +22,7 @@ repository               : "shivakhanal/shivakhanal.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "bio-photo.png"
   name             : "Shiva Khanal, PhD"
   pronouns         : # example: "she/her"
   bio              : "Researcher, Ministry of Agriculture, Forest and Environment, Nepal."

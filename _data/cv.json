@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Shiva Khanal",
-    "email": "TODO@example.com",
+    "email": "1khanalshiva@gmail.com",
     "phone": "",
     "website": "https://shivakhanal.github.io",
-    "summary": "Under-Secretary for Climate Change, Ministry of Agriculture, Forest and Environment, Nepal. Researcher in forest carbon, fire ecology, and remote sensing.",
+    "summary": "Researcher, Ministry of Agriculture, Forest and Environment, Nepal. Researcher in forest carbon, fire ecology, and remote sensing.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -22,7 +22,7 @@
   "work": [
     {
       "company": "Ministry of Agriculture, Forest and Environment, Nepal",
-      "position": "Under-Secretary, Climate Change",
+      "position": "Researcher",
       "startDate": "TODO",
       "endDate": "present",
       "summary": "Coordinates climate transparency reporting under the UNFCCC: BTRs, National Communications, NDC tracking, Enhanced Transparency Framework implementation."
