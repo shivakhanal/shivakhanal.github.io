@@ -1,0 +1,121 @@
+---
+title: "Website maintenance quick reference"
+author: "Shiva Khanal"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+This is just a reference note, not a build script. It doesn't need to be knitted to be useful, open it in RStudio and read it as plain text whenever you forget where something lives in the site.
+
+## Add a new publication
+
+Create a new file in `_publications/`, named `YYYY-MM-DD-short-title.md`. Copy an existing one and edit the front matter:
+
+```
+---
+title: "Paper title"
+collection: publications
+category: manuscripts
+permalink: /publication/short-title
+excerpt: 'One or two sentence summary'
+date: 2026-08-01
+venue: 'Journal Name'
+paperurl: 'https://doi.org/xx.xxxx/xxxxx'
+citation: 'Khanal, S. et al. (2026). Title. Journal Name.'
+---
+```
+`category` must be one of `books`, `manuscripts`, or `conferences` (defined in `_config.yml` under `publication_category`).
+
+## Hide a publication (without deleting it)
+
+Move the file from `_publications/` into `_drafts/` (create that folder if needed), or add `published: false` to its front matter. Either way it stops appearing on the site but the file stays in the repo for later.
+
+## Add a new blog post / announcement
+
+Create a file in `_posts/`, named `YYYY-MM-DD-short-title.md`:
+
+```
+---
+title: "Your headline"
+date: 2026-08-01
+categories: publications   # or: talks, activities, general
+tags: [optional, keywords]
+---
+
+Write it however you'd write a LinkedIn post.
+```
+
+Shows up automatically at `/year-archive/` (linked as "Updates" in the nav), newest first.
+
+## Add a talk / presentation
+
+New file in `_talks/`, same date-prefixed naming:
+
+```
+---
+title: "Talk title"
+collection: talks
+type: "Conference presentation"
+permalink: /talks/short-title
+venue: "Conference name"
+date: 2026-08-01
+location: "City, Country"
+---
+Short description.
+```
+
+## Add an award
+
+Add one entry to `_data/awards.yml`:
+```
+- title: "Award name"
+  organization: "Awarding body"
+  year: 2026
+  description: "One line"
+```
+
+## Add a position / service role
+
+Add one entry to `_data/positions.yml`:
+```
+- title: "Role title"
+  organization: "Institution"
+  start: 2026
+  end: "present"
+  description: "One line"
+```
+
+## Change the top navigation menu
+
+Edit `_data/navigation.yml`. Reorder, add, or remove entries under `main:`. Removing an entry hides that section from the menu but doesn't delete the content or its page.
+
+## Change your bio / homepage text
+
+Edit `_pages/about.md`.
+
+## Change sidebar info (email, ORCID, Scholar, GitHub, etc.)
+
+Edit the `author:` block near the top of `_config.yml`.
+
+## Change/add a banner or header image on any page
+
+1. Put the image file in `images/`.
+2. In that page's front matter, add:
+```
+header:
+  image: /images/your-file.jpg
+```
+
+## Push changes live
+
+From the project folder, using a terminal (RStudio's Terminal tab works fine, this is not an R step):
+```
+git add .
+git commit -m "short description of what changed"
+git push
+```
+Check the build succeeded under the repo's **Actions** tab on GitHub, then view the live site at `https://shivakhanal.github.io`.
+
+## Where NOT to make changes
+
+Anything under `_layouts/`, `_includes/`, `_sass/`, or `assets/` is theme/design code, not content. You should never need to touch these for adding or editing content, only if you want to change how the site looks or behaves structurally.
