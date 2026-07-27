@@ -25,19 +25,19 @@ author:
   avatar           : "profile.png"
   name             : "Shiva Khanal, PhD"
   pronouns         : # example: "she/her"
-  bio              : "Under-Secretary for Climate Change, Ministry of Agriculture, Forest and Environment, Nepal. Researcher in forest carbon and fire ecology."
+  bio              : "Researcher, Ministry of Agriculture, Forest and Environment, Nepal."
   location         : "Kathmandu, Nepal"
   employer         : "Ministry of Agriculture, Forest and Environment, Nepal"
   uri              : # URL
-  email            : "TODO@example.com"
+  email            : "1khanalshiva@gmail.com"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "TODO-your-scholar-profile-url"
+  googlescholar    : "https://scholar.google.com/citations?user=kCTDo4sAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "TODO-your-orcid-url"
+  orcid            : "https://orcid.org/0000-0002-6173-6789"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
