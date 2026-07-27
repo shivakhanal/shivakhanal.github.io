@@ -362,4 +362,7 @@ compress_html:
 exclude:
   - "*.Rmd"
   - "TODO.md"
-  - "website-maintenance-guide.Rmd"    
+  - "website-maintenance-guide.Rmd"
+  - vendor
+  - Gemfile
+  - Gemfile.lock
