@@ -5,7 +5,7 @@ categories: activities
 tags: [R, capacity-building, forestry, Nepal, open-source]
 ---
 
-Together with my colleague [Prakash Lamichhane](https://www.linkedin.com/in/), Research Officer at the Ministry of Forests and Environment, I co-organize [EnviroDataR Group Nepal](https://www.meetup.com/enirodatar-group-nepal/), a community for environment and forestry professionals in Nepal working with R.
+Together with my colleague [Prakash Lamichhane](https://www.linkedin.com/in/prakash-lamichhane-19584a164/), Research Officer at the Ministry of Forests and Environment, I co-organize [EnviroDataR Group Nepal](https://www.meetup.com/enirodatar-group-nepal/), a community for environment and forestry professionals in Nepal working with R.
 
 One recent initiative worth highlighting: a seven-day R programming training for government officials, run jointly with the Forest Research and Training Center (FRTC), Koshi Province. Participants, mostly staff from Divisional Forests Offices, learned practical R workflows for forest inventories, biodiversity monitoring, carbon stock estimation, and national greenhouse gas reporting, covering R fundamentals, data manipulation with `dplyr`, visualization with `ggplot2`, basic statistical tests, and introductory geospatial mapping.
 
