@@ -17,8 +17,3 @@ I hold a PhD from [Western Sydney University](https://www.westernsydney.edu.au/h
 
 See [Publications](/publications/), [Updates](/year-archive/), [Awards](/awards/), and [Positions & Service](/positions/) for more.
 
-
-<<<<<<< HEAD
-See [Publications](/publications/), [Updates](/year-archive/), [Awards](/awards/), and [Positions & Service](/positions/) for more.
-=======
->>>>>>> d9973499bda38cc827c80f60dcf657c3cf525c02
