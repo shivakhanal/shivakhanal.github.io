@@ -15,5 +15,5 @@ main:
   - title: "Positions & Service"
     url: /positions/
 
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
