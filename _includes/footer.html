@@ -1,12 +1,5 @@
 {% include base_path %}
 
-<!-- Optional footer image. Drop a file into /images/ and set the path below to enable it. -->
-{% if site.footer_image %}
-<div class="page__footer-image">
-  <img src="{{ base_path }}{{ site.footer_image }}" alt="" />
-</div>
-{% endif %}
-
 <div class="page__footer-copyright">
   &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}<br />
   Site last updated {{ "now" | date: '%Y-%m-%d' }}, <a href="/sitemap/" style="text-transform: uppercase;">{{ site.data.ui-text[site.locale].site_map | default: "Sitemap" }}</a>

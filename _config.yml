@@ -16,7 +16,6 @@ description              : &description "Climate transparency, forest carbon, an
 url                      : https://shivakhanal.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "shivakhanal/shivakhanal.github.io"
-footer_image             : "/images/australia_landscape.jpg"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
