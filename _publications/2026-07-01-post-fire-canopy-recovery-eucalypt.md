@@ -14,4 +14,3 @@ Uses over 20 years of MODIS FPAR time series (2001-2022), combined with S-mode P
 
 Collaboration with Amila Wickramasinghe, Ivan Kotzur, and Matthias Boer at the Hawkesbury Institute for the Environment, Western Sydney University.
 
-NOTE: swap the paperurl above for the journal DOI once available, and confirm the exact publication date.
