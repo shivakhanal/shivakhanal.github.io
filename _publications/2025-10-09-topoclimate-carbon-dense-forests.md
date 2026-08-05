@@ -1,7 +1,9 @@
 ---
 title: "New paper: topoclimatic factors and carbon-dense forests in the Central Himalayas"
 date: 2025-10-09
-categories: publications
+collection: publications
+category: manuscripts
+paperurl: 'https://www.nature.com/articles/s41598-025-19127-y'
 tags: [forest-carbon, Himalayas, remote-sensing, climate]
 ---
 
@@ -15,4 +17,4 @@ We found that extreme carbon density is tied to specific topographic settings: s
 
 ![Field photo from the Central Himalayas](/images/topoclimate-2.jpeg)
 
-Read the full paper: [Topoclimatic factors create favourable conditions for carbon-dense forests in the Central Himalayas | Scientific Reports](https://www.nature.com/articles/s41598-025-19127-y)
+Read the full paper: https://www.nature.com/articles/s41598-025-19127-y
