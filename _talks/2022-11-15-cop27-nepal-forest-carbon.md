@@ -12,4 +12,3 @@ Presented findings from my PhD thesis, *'Quantification of Nepal's forest carbon
 
 Covered by Western Sydney University's Hawkesbury Institute for the Environment: [Western PhD candidate presents new research at 2022 United Nations Climate Change Conference, helping quantify forest carbon stocks in Nepal](https://www.westernsydney.edu.au/news-centre/stories/2022/western-phd-candidate-presents-new-research-at-2022-united-nations-climate-change-conference-helping-quantify-forest-carbon-stocks-in-nepal)
 
-NOTE: confirm the exact presentation date within COP27 (6-18 November 2022) and update the `date:` field above to match.
