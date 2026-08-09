@@ -15,6 +15,6 @@ The Central Himalayas hold some of the most carbon-dense forests on Earth, with 
 
 We found that extreme carbon density is tied to specific topographic settings: slope, aspect, and curvature that together provide the right balance of climatic energy and water availability. Carbon was lower in terrain prone to disturbance, such as avalanche tracks and mass-movement zones. The results point to terrain itself as a key, underused signal for predicting where high-carbon forests are likely to occur in mountain landscapes, with implications for conservation and management in the region.
 
-![Field photo from the Central Himalayas](/images/topoclimate-2.jpeg){: width="600"}
+![Field photo from the Central Himalayas](/images/topoclimate-2.jpeg){: width="500"}
 
 Read the full paper: https://www.nature.com/articles/s41598-025-19127-y
