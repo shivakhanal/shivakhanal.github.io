@@ -26,7 +26,7 @@ The system pulls the NAP apart into something a computer  and a policymaker  can
 The three outputs: The Shiny app, the PDF report, and a slide deck like the one I presented in Jeju, all run off the same two CSVs, so nothing has to be manually re-typed as new data comes in. Re-knit the report, and every chart updates.
 
 ![The Shiny app](/images/napshiny_preview.jpg){: width="600"}
-*The Shiny dashboard — filterable by sector, indicator, and status.*
+*The Shiny dashboard -> filterable by sector, indicator, and status.*
 
 Right now, 29 of the 195 indicators have a sourced progress value, a rough start, not a finish line. Sourcing the rest, sector by sector, is the immediate next phase.
 
