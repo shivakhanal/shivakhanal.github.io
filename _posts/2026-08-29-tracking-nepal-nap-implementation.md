@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Can We Quantify NAP Implementation? An Initial Idea on a Shiny-Based Reporting System for Nepal's Climate Adaptation Progress"
 date: 2026-08-29
+categories: activities
 tags: [climate-adaptation, NAP, Nepal, forest-fire, transparency, R, Shiny]
 ---
 
