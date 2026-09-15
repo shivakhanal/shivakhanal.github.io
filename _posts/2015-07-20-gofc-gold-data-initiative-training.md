@@ -8,13 +8,13 @@ tags: [GOFC-GOLD, remote-sensing, Landsat, USGS, EROS, land-cover, fellowship, c
 In July–August 2015 I was awarded a **GOFC-GOLD Data Initiative Advanced Training** fellowship, administered by the International START Secretariat, Washington, DC, to attend a three-week training programme split between the **USGS EROS Center** in Sioux Falls, South Dakota, and **Boston University** in Boston, Massachusetts (20 July – 7 August 2015). The training brought together participants from Bulgaria, India, Vietnam, Zimbabwe, Togo, Uganda, Kenya, and Madagascar.
 
 <!-- Add event photo below. Copy the image file into /images/ first, then update the filename here. -->
-![At the USGS EROS Center with Thomas R. Loveland](/images/gofc-gold-2015-usgs-loveland.jpg){: width="600"}
+![At the USGS EROS Center with Thomas R. Loveland](/images/gofc-gold-2015-usgs-loveland.JPG){: width="600"}
 
 *At the USGS EROS Center with Thomas R. Loveland, Senior Scientist, USGS EROS and other participants.*
 
 ## Week one: USGS EROS Center, Sioux Falls
 
-The first week was a hands-on introduction to the data sets and derived products coming out of EROS: Landsat data characteristics and holdings, Landsat Climate Data Records and essential variables, MODIS and ASTER characteristics, elevation data sets, and the tools used to query and download from the USGS archive,  Glovis, EarthExplorer, and the bulk-download tools. Sessions were led by Tom Loveland, Curtis Woodcock and Pontus Olofsson (joining on GOFC-GOLD activities and initiatives), and EROS staff including John Faundeen, Linda Owen, Kelly Lemig, Danae Verba, Brett Lien, Jan Wilson, Jared Zubke and Dean Gesch.
+The first week was a hands-on introduction to the data sets and derived products coming out of EROS: Landsat data characteristics and holdings, Landsat Climate Data Records and essential variables, MODIS and ASTER characteristics, elevation data sets, and the tools used to query and download from the USGS archive,  Glovis, EarthExplorer, and the bulk-download tools. Sessions were led by Tom Loveland (joining on GOFC-GOLD activities and initiatives), and EROS staff including John Faundeen, Linda Owen, Kelly Lemig, Danae Verba, Brett Lien, Jan Wilson, Jared Zubke and Dean Gesch.
 
 Having already used USGS data for some time, the training filled in a lot of gaps in how I was querying, selecting and downloading it. Over the week I also came away with a substantial bulk of long-term satellite imagery, elevation data and higher-level products staged and ready to work with,  a meaningful head start given how slow the internet connection back at my home institution could be.
 
