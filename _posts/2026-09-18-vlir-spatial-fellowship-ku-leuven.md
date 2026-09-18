@@ -1,6 +1,6 @@
 ---
 title: "The 2008 VLIR Spatial Fellowship at KU Leuven: Bridging Earth Observation and Himalayan Ecology"
-date: 2026-09-18
+date: 2025-01-18
 categories: activities
 tags: [remote-sensing, GIS, VLIR-UOS, KU-Leuven, Nepal, forest-cover, fellowship]
 ---
