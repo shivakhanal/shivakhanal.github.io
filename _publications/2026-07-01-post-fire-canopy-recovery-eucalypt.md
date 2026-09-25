@@ -7,6 +7,7 @@ excerpt: 'Classifies forest phenology types across NSW eucalypt forests and quan
 date: 2026-07-01
 venue: 'Forest Ecology and Management'
 paperurl: 'https://doi.org/10.1016/j.foreco.2026.124097'
+doi: '10.1016/j.foreco.2026.124097'
 citation: 'Khanal, S., Wickramasinghe, A., Kotzur, I., Boer, M. (2026). &quot;Objective assessment of post-fire canopy recovery trajectories in south-eastern Australian eucalypt forests.&quot; <i>Forest Ecology and Management</i>.'
 ---
 

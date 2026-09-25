@@ -24,7 +24,6 @@ Search your repo for the string `TODO` to find every spot below.
 - Confirm exact publication date, update the filename and `date:` field to match
 
 ## _publications/2026-07-01-post-fire-canopy-recovery-eucalypt.md
-- Replace the lnkd.in shortened URL with the journal DOI once available
 - Confirm exact publication date
 
 ## _talks/2026-05-01-ialena-2026.md

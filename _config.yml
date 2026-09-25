@@ -8,15 +8,16 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "forest" # Custom green/blue theme in _sass/theme/_forest_*.scss. Other options: "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Shiva Khanal"
-title_separator          : "-"
+title_separator          : "·"
 name                     : &name "Shiva Khanal"
 description              : &description "Climate transparency, forest carbon, and fire ecology research and policy"
 url                      : https://shivakhanal.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "shivakhanal/shivakhanal.github.io"
 footer_image             : "/images/australia_landscape.jpg"
+footer_image_alt         : "Australian landscape"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -30,7 +31,8 @@ author:
   location         : "Kathmandu, Nepal"
   employer         : "Ministry of Agriculture, Forest and Environment, Nepal"
   uri              : # URL
-  email            : "1khanalshiva@gmail.com" 
+  email            : "1khanalshiva@gmail.com"
+  citation_name    : "Khanal, S." # shown in bold in publication citations
 
   # Academic websites
   academia         : # URL
@@ -66,7 +68,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/shiva-khanal-87566116/"
+  linkedin         : "https://www.linkedin.com/in/shiva-khanal-87566116/" # full profile URL or just the username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -143,7 +145,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "og-image.jpg" # Social media default site image (1200x630, in /images/)
+og_image_alt             : "Shiva Khanal, PhD, Researcher, Ministry of Agriculture, Forest and Environment, Nepal"
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -210,6 +213,15 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
+  # Sample files from the template and the talk map are kept out of the sitemap
+  - scope:
+      path: "files"
+    values:
+      sitemap: false
+  - scope:
+      path: "talkmap"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
@@ -365,3 +377,13 @@ exclude:
   - "*.Rmd"
   - "TODO.md"
   - "website-maintenance-guide.Rmd"
+  - "*.R"
+  - "*.Rproj"
+  - "*.ipynb"
+  - talkmap.py
+  - docker-compose.yaml
+  - _config_docker.yml
+  - markdown_generator
+  - scripts
+  - README.md
+  - "*.Rhistory"

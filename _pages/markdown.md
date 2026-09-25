@@ -1,4 +1,5 @@
 ---
+published: false # template demo page, not part of the site
 permalink: /markdown/
 title: "Markdown"
 author_profile: true

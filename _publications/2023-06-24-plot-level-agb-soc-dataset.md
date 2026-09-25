@@ -7,6 +7,7 @@ excerpt: 'Presents the most comprehensive georeferenced, plot-level dataset to d
 date: 2023-06-24
 venue: 'Scientific Data'
 paperurl: 'https://www.nature.com/articles/s41597-023-02314-9'
+doi: '10.1038/s41597-023-02314-9'
 citation: 'Khanal, S., Boer, M.M. (2023). &quot;Plot-level estimates of aboveground biomass and soil organic carbon stocks from Nepal&rsquo;s forest inventory.&quot; <i>Scientific Data</i>, 10, 406.'
 ---
 

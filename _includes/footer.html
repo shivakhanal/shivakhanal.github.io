@@ -9,11 +9,11 @@
 <div class="page__footer-inner{% if show_footer_image %} has-image{% endif %}">
   {% if show_footer_image %}
   <div class="page__footer-image">
-    <img src="{{ base_path }}{{ site.footer_image }}" alt="" />
+    <img src="{{ base_path }}{{ site.footer_image }}" alt="{{ site.footer_image_alt | default: 'Landscape photograph' }}" loading="lazy" />
   </div>
   {% endif %}
 
   <div class="page__footer-copyright">
-    &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, <a href="/sitemap/" style="text-transform: uppercase;">{{ site.data.ui-text[site.locale].site_map | default: "Sitemap" }}</a>
+    &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, <a href="{{ base_path }}/sitemap/">{{ site.data.ui-text[site.locale].site_map | default: "Sitemap" }}</a>
   </div>
 </div>

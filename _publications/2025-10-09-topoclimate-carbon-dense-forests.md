@@ -3,7 +3,12 @@ title: "New paper: topoclimatic factors and carbon-dense forests in the Central 
 date: 2025-10-09
 collection: publications
 category: manuscripts
+venue: 'Scientific Reports'
+excerpt: 'Examines how fine-scale topoclimatic conditions (slope, aspect and curvature) shape where the carbon-dense forests of the Central Himalayas occur, with lower carbon in terrain prone to disturbance such as avalanche tracks and mass-movement zones.'
+header:
+  teaser: topoclimate.jpeg
 paperurl: 'https://www.nature.com/articles/s41598-025-19127-y'
+doi: '10.1038/s41598-025-19127-y'
 tags: [forest-carbon, Himalayas, remote-sensing, climate]
 ---
 
@@ -15,6 +20,4 @@ The Central Himalayas hold some of the most carbon-dense forests on Earth, with 
 
 We found that extreme carbon density is tied to specific topographic settings: slope, aspect, and curvature that together provide the right balance of climatic energy and water availability. Carbon was lower in terrain prone to disturbance, such as avalanche tracks and mass-movement zones. The results point to terrain itself as a key, underused signal for predicting where high-carbon forests are likely to occur in mountain landscapes, with implications for conservation and management in the region.
 
-![Field photo from the Central Himalayas](/images/topoclimate.jpeg){: width="500"}
-
-Read the full paper: https://www.nature.com/articles/s41598-025-19127-y
+[Read the full paper in *Scientific Reports*](https://www.nature.com/articles/s41598-025-19127-y)

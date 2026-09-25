@@ -1,0 +1,11 @@
+{% include base_path %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
+<article class="pub" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <div class="pub__year" aria-hidden="true">{{ post.date | date: "%Y" }}</div>
+  <div class="pub__body">
+    <h3 class="pub__title" itemprop="headline"><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a></h3>
+    {% include publication-citation.html pub=post %}
+    {% if post.excerpt %}<div class="pub__summary" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncatewords: 60 }}</div>{% endif %}
+    {% include publication-links.html pub=post %}
+  </div>
+</article>

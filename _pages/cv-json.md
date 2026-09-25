@@ -1,4 +1,5 @@
 ---
+published: false # re-enable (and add to navigation.yml) once _data/cv.json is complete
 layout: archive
 title: "CV"
 permalink: /cv-json/

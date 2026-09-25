@@ -7,6 +7,7 @@ excerpt: 'Combines forest inventory plots with a two-step bioregionalisation and
 date: 2025-12-23
 venue: 'Carbon Balance and Management'
 paperurl: 'https://doi.org/10.1186/s13021-025-00367-4'
+doi: '10.1186/s13021-025-00367-4'
 citation: 'Khanal, S., Nolan, R.H., Medlyn, B.E., Boer, M.M. (2025). &quot;Spatially explicit prediction of Nepal&rsquo;s forest biomass stocks, a data-driven bioregionalisation and machine learning approach.&quot; <i>Carbon Balance and Management</i>, 21, 23.'
 ---
 
