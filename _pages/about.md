@@ -5,7 +5,6 @@ layout: single
 author_profile: true
 description: "Shiva Khanal, PhD: Researcher at Nepal's Ministry of Agriculture, Forest and Environment working on UNFCCC climate transparency reporting, forest carbon accounting, and remote sensing and fire ecology."
 hero:
-  eyebrow: "Climate transparency · Forest carbon · Fire ecology"
   title: "Researcher, Ministry of Agriculture, Forest and Environment, Nepal"
   subtitle: "PhD, Western Sydney University"
   focus: "Climate transparency reporting under the UNFCCC, forest carbon accounting, and remote sensing of forests and fire."
@@ -35,22 +34,19 @@ I hold a PhD from [Western Sydney University](https://www.westernsydney.edu.au/h
 
 <div class="research-cards">
   <article class="research-card">
-    <div class="research-card__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
     <h3 class="research-card__title">Climate transparency &amp; UNFCCC reporting</h3>
     <p>Coordinating Nepal's Biennial Transparency Reports, National Communications, NDC tracking and Enhanced Transparency Framework implementation.</p>
-    <a class="research-card__link" href="/positions/">Positions &amp; service <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    <a class="research-card__link" href="/positions/">Positions &amp; service</a>
   </article>
   <article class="research-card">
-    <div class="research-card__icon"><i class="fa-solid fa-tree" aria-hidden="true"></i></div>
-    <h3 class="research-card__title">Forest carbon accounting</h3>
+    <h3 class="research-card__title">Forest ecology and carbon accounting</h3>
     <p>Aboveground biomass and soil organic carbon stocks from Nepal's national forest inventory, including the carbon-dense forests of the Central Himalayas.</p>
-    <a class="research-card__link" href="/publications/">Publications <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    <a class="research-card__link" href="/publications/">Publications</a>
   </article>
   <article class="research-card">
-    <div class="research-card__icon"><i class="fa-solid fa-satellite" aria-hidden="true"></i></div>
     <h3 class="research-card__title">Remote sensing &amp; fire ecology</h3>
     <p>Satellite time series and landscape models of rainforest fire vulnerability and post-fire canopy recovery in eastern Australian forests.</p>
-    <a class="research-card__link" href="/publications/">Publications <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    <a class="research-card__link" href="/publications/">Publications</a>
   </article>
 </div>
 
