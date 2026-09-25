@@ -170,7 +170,7 @@ a {
   }
 
   .sidebar {
-    padding-top: 0;
+    padding-top: 0 !important;
   }
 
   .author__urls-wrapper {
@@ -704,6 +704,11 @@ a.pub-link,
   margin: 0 0 0.4rem;
 }
 
+.page__inner-wrap > header .talk__venue {
+  font-size: 1rem;
+  margin: -0.8em 0 1.5em;
+}
+
 .talk__type {
   display: inline-block;
   font-size: 0.8em;
@@ -754,17 +759,164 @@ a.pub-link,
   color: var(--global-text-color-light);
 }
 
+/* List items with a thumbnail (updates, related posts)
+   ========================================================================== */
+
+.archive__item-meta {
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.4rem;
+}
+
+.archive__item--thumb {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 96px;
+  gap: 1rem;
+  align-items: start;
+
+  @include breakpoint($medium) {
+    grid-template-columns: minmax(0, 1fr) 160px;
+    gap: 1.5rem;
+  }
+}
+
+.archive__item-thumb {
+  display: block;
+  margin-top: 1.1em;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--site-surface-alt);
+  border: 1px solid var(--global-border-color);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.25s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.04);
+  }
+}
+
+.list__item .archive__item-excerpt {
+  font-size: $type-size-6;
+  margin-bottom: 0.75rem;
+}
+
+/* Related posts ("You may also enjoy") as a compact card grid */
+.page__related {
+  .grid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @include breakpoint($medium) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .grid__item {
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+
+  .archive__item {
+    height: 100%;
+    padding: 1rem 1.1rem;
+    background: var(--site-surface);
+    border: 1px solid var(--global-border-color);
+    border-radius: 10px;
+  }
+
+  .archive__item--thumb {
+    grid-template-columns: minmax(0, 1fr) 80px;
+    gap: 0.9rem;
+  }
+
+  .archive__item-title {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .archive__item-excerpt {
+    font-size: $type-size-6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .archive__item-thumb {
+    margin-top: 0;
+  }
+}
+
+.page__related-title {
+  font-family: $header-font-family;
+  font-size: $type-size-5;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--global-text-color);
+}
+
+.page__meta--post {
+  font-size: $type-size-6;
+  margin: -0.2em 0 1.5em;
+
+  i {
+    color: var(--site-accent);
+  }
+}
+
 /* Footer
    ========================================================================== */
 
-/* Keep the footer in the page flow at every width, so it never covers content */
+/* Dark fallback so the white copyright text stays readable before the photo loads */
+.page__footer-inner.has-image .page__footer-image {
+  background: #1d2a26;
+}
+
+/* Keep the footer in the page flow at every width, so it never covers content,
+   and push it to the bottom of the window on short pages */
 body {
   padding-bottom: 0;
+  margin-bottom: 0 !important; /* _main.js adds a margin for the old fixed footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+#main {
+  width: 100%;
 }
 
 .page__footer {
   position: relative;
   bottom: auto;
+  margin-top: auto;
+  padding-top: 0;
+}
+
+#main + .page__footer,
+.page__footer {
+  margin-top: auto !important;
+}
+
+.not-found-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
 }
 
 .page__footer-copyright {
