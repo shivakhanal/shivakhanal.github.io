@@ -7,6 +7,7 @@ excerpt: 'Models forest soil organic carbon (SOC) stocks across Nepal using nati
 date: 2023-05-19
 venue: 'Scientific Reports'
 paperurl: 'https://www.nature.com/articles/s41598-023-34247-z'
+doi: '10.1038/s41598-023-34247-z'
 citation: 'Khanal, S., Nolan, R.H., Medlyn, B.E., Boer, M.M. (2023). &quot;Mapping soil organic carbon stocks in Nepal&rsquo;s forests.&quot; <i>Scientific Reports</i>, 13, 8090.'
 ---
 

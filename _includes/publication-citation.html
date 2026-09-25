@@ -1,0 +1,14 @@
+{% comment %}
+  Formatted citation with the site author's name highlighted. Usage: {% include publication-citation.html pub=post %}
+  Falls back to "Venue, Year" when no citation is given in the front matter.
+{% endcomment %}
+{% assign pub = include.pub %}
+{% assign me = site.author.citation_name | default: "Khanal, S." %}
+{% capture me_html %}<strong class="pub__me">{{ me }}</strong>{% endcapture %}
+<p class="pub__citation">
+{% if pub.citation %}
+  {{ pub.citation | replace: me, me_html }}
+{% else %}
+  {% if pub.venue %}<i>{{ pub.venue }}</i>, {% endif %}{{ pub.date | date: "%Y" }}.
+{% endif %}
+</p>

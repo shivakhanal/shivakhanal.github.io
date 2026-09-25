@@ -1,0 +1,28 @@
+{% comment %}
+  Link buttons for a publication. Usage: {% include publication-links.html pub=post %}
+  Uses whichever of doi, paperurl, pdfurl, slidesurl, bibtexurl are set in the front matter.
+{% endcomment %}
+{% assign pub = include.pub %}
+{% if pub.doi %}{% assign doi_url = pub.doi | prepend: "https://doi.org/" %}{% else %}{% assign doi_url = nil %}{% endif %}
+{% if pub.doi or pub.paperurl or pub.pdfurl or pub.slidesurl or pub.bibtexurl or include.details %}
+<ul class="pub-links">
+  {% if pub.doi %}
+    <li><a class="pub-link pub-link--doi" href="{{ doi_url }}"><span class="pub-link__tag">DOI</span>{{ pub.doi }}</a></li>
+  {% endif %}
+  {% if pub.paperurl and pub.paperurl != doi_url %}
+    <li><a class="pub-link" href="{{ pub.paperurl }}"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Journal page</a></li>
+  {% endif %}
+  {% if pub.pdfurl %}
+    <li><a class="pub-link" href="{{ pub.pdfurl }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a></li>
+  {% endif %}
+  {% if pub.slidesurl %}
+    <li><a class="pub-link" href="{{ pub.slidesurl }}"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>Slides</a></li>
+  {% endif %}
+  {% if pub.bibtexurl %}
+    <li><a class="pub-link" href="{{ pub.bibtexurl }}"><i class="fa-solid fa-quote-right" aria-hidden="true"></i>BibTeX</a></li>
+  {% endif %}
+  {% if include.details %}
+    <li><a class="pub-link" href="{{ base_path }}{{ pub.url }}"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>Summary</a></li>
+  {% endif %}
+</ul>
+{% endif %}

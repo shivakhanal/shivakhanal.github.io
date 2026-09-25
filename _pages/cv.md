@@ -3,62 +3,69 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+description: "Curriculum vitae of Shiva Khanal, PhD: positions, education, publications, presentations, awards and service."
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<p class="page__lead-note">A summary drawn from the pages of this site. For a full, current CV please <a href="mailto:{{ site.author.email }}">get in touch</a>.</p>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+<section class="cv-section">
+<h2 class="archive__subtitle">Current position</h2>
+{% assign current = site.data.positions | first %}
+<div class="cv-item">
+  <p class="cv-item__title"><strong>{{ current.title }}</strong>, {{ current.organization }}</p>
+  {% if current.description != "" %}<p class="cv-item__desc">{{ current.description }}</p>{% endif %}
+</div>
+</section>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+<section class="cv-section">
+<h2 class="archive__subtitle">Education</h2>
+<div class="cv-item">
+  <p class="cv-item__title"><strong>PhD</strong>, <a href="https://www.westernsydney.edu.au/hie/people/postgraduate-students/graduates/shiva-khanal">Western Sydney University</a></p>
+  <p class="cv-item__desc">Hawkesbury Institute for the Environment. Thesis research: quantification of Nepal's forest carbon stocks.</p>
+</div>
+</section>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<section class="cv-section">
+<h2 class="archive__subtitle">Publications</h2>
+<ol class="cv-list" reversed>
+{% for post in site.publications reversed %}
+  <li>
+    {% if post.citation %}{% include publication-citation.html pub=post %}{% else %}<p class="pub__citation"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>. {% if post.venue %}<i>{{ post.venue }}</i>, {% endif %}{{ post.date | date: "%Y" }}.</p>{% endif %}
+    {% if post.doi %}<a class="cv-doi" href="https://doi.org/{{ post.doi }}">doi:{{ post.doi }}</a>{% endif %}
+  </li>
+{% endfor %}
+</ol>
+</section>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+<section class="cv-section">
+<h2 class="archive__subtitle">Presentations</h2>
+<ul class="cv-list">
+{% for post in site.talks reversed %}
+  <li><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>. {{ post.venue }}{% if post.location %}, {{ post.location }}{% endif %}, {{ post.date | date: "%Y" }}.</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="cv-section">
+<h2 class="archive__subtitle">Awards &amp; fellowships</h2>
+<ul class="cv-list">
+{% for award in site.data.awards %}
+  <li><strong>{{ award.title }}</strong>, {{ award.organization }}, {{ award.year }}.</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="cv-section">
+<h2 class="archive__subtitle">Positions &amp; service</h2>
+<ul class="cv-list">
+{% for role in site.data.positions %}
+  {% if role.organization != "" %}
+  <li><strong>{{ role.title }}</strong>, {% if role.link %}<a href="{{ role.link }}">{{ role.organization }}</a>{% else %}{{ role.organization }}{% endif %}</li>
+  {% endif %}
+{% endfor %}
+</ul>
+</section>

@@ -7,6 +7,7 @@ excerpt: 'Tests whether the exceptional aboveground biomass density (>1000 t/ha)
 date: 2024-01-09
 venue: 'Forest Ecology and Management'
 paperurl: 'https://doi.org/10.1016/j.foreco.2023.121679'
+doi: '10.1016/j.foreco.2023.121679'
 citation: 'Khanal, S., Nolan, R.H., Medlyn, B.E., Boer, M.M. (2024). &quot;Disentangling contributions of allometry, species composition and structure to high aboveground biomass density of high-elevation forests.&quot; <i>Forest Ecology and Management</i>, 554, 121679.'
 ---
 

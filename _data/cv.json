@@ -13,8 +13,8 @@
       "region": ""
     },
     "profiles": [
-      { "network": "Google Scholar", "username": "", "url": "TODO-your-scholar-url" },
-      { "network": "ORCID", "username": "", "url": "TODO-your-orcid-url" },
+      { "network": "Google Scholar", "username": "", "url": "https://scholar.google.com/citations?user=kCTDo4sAAAAJ&hl=en" },
+      { "network": "ORCID", "username": "", "url": "https://orcid.org/0000-0002-6173-6789" },
       { "network": "GitHub", "username": "shivakhanal", "url": "https://github.com/shivakhanal" },
       { "network": "ResearchGate", "username": "", "url": "https://www.researchgate.net/profile/Shiva-Khanal-2" }
     ]
@@ -59,7 +59,7 @@
       "name": "Objective assessment of post-fire canopy recovery trajectories in south-eastern Australian eucalypt forests",
       "publisher": "Forest Ecology and Management",
       "releaseDate": "2026-TODO",
-      "website": "https://lnkd.in/gviN9FYd",
+      "website": "https://doi.org/10.1016/j.foreco.2026.124097",
       "summary": "MODIS FPAR-based classification of canopy recovery speed after fire, comparing prescribed burns to wildfires."
     }
   ],

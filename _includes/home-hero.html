@@ -1,0 +1,25 @@
+{% include base_path %}
+{% assign hero = page.hero %}
+<section class="home-hero" aria-labelledby="home-hero-name">
+  {% if hero.image %}
+  <img class="home-hero__bg" src="{{ hero.image | prepend: '/images/' | prepend: base_path }}" alt="{{ hero.image_alt | default: '' }}" fetchpriority="high">
+  {% endif %}
+  <div class="home-hero__inner">
+    <img class="home-hero__avatar" src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}" alt="Portrait of {{ site.author.name }}" width="160" height="160">
+    <div class="home-hero__text">
+      {% if hero.eyebrow %}<p class="home-hero__eyebrow">{{ hero.eyebrow }}</p>{% endif %}
+      <h1 id="home-hero-name" class="home-hero__name">{{ site.author.name }}</h1>
+      {% if hero.title %}<p class="home-hero__title">{{ hero.title }}</p>{% endif %}
+      {% if hero.subtitle %}<p class="home-hero__subtitle">{{ hero.subtitle }}</p>{% endif %}
+      {% if hero.focus %}<p class="home-hero__focus">{{ hero.focus }}</p>{% endif %}
+      {% if hero.buttons %}
+      <div class="home-hero__actions">
+        {% for b in hero.buttons %}
+          {% if b.url contains ':' %}{% assign href = b.url %}{% else %}{% assign href = b.url | prepend: base_path %}{% endif %}
+          <a class="hero-btn{% if b.style == 'primary' %} hero-btn--primary{% endif %}" href="{{ href }}">{% if b.icon %}<i class="{{ b.icon }}" aria-hidden="true"></i>{% endif %}<span>{{ b.label }}</span></a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -3,11 +3,18 @@ layout: archive
 title: "Awards & Honors"
 permalink: /awards/
 author_profile: true
+description: "Awards, fellowships and research grants received by Shiva Khanal."
 ---
 
+<div class="entry-list">
 {% for award in site.data.awards %}
-<div style="margin-bottom: 1.2em;">
-  <strong>{{ award.title }}</strong> - {{ award.organization }}, {{ award.year }}
-  {% if award.description %}<br><span style="color:#666;">{{ award.description }}</span>{% endif %}
+<div class="entry">
+  <div class="entry__year">{{ award.year }}</div>
+  <div class="entry__body">
+    <p class="entry__title"><strong>{{ award.title }}</strong></p>
+    <p class="entry__org">{{ award.organization }}</p>
+    {% if award.description %}<p class="entry__desc">{{ award.description }}</p>{% endif %}
+  </div>
 </div>
 {% endfor %}
+</div>
