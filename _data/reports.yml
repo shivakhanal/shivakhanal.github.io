@@ -2,7 +2,7 @@
 # Fields: title, date (YYYY, YYYY-MM), publisher, affiliation, isbn, doi, report_number, url, news_url
 - title: "NDC 3.0 Technical Report"
   date: "2026"
-  publisher: "Government of Nepal, Ministry of Forests and Environment"
+  publisher: "Led by the Ministry of Forests and Environment"
   url: "https://giwmscdntwo.gov.np/media/pdf_upload/GoN_MoFE_NDC%203.0%20Technical%20Report_2026_web_jxmcfzi.pdf"
   news_url: "https://www.ecospherenews.com/detail/1854"
 
