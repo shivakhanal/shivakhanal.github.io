@@ -1,0 +1,40 @@
+# Published datasets and data contributions, newest first. Shown on the Publications page ("Data" tab) and the CV.
+# Fields: title, creators, date (YYYY-MM-DD, YYYY-MM or YYYY), file_size, doi, url, note
+- title: "Developing stem taper model for Shorea robusta in far-western Terai of Nepal"
+  creators: "Shiva Khanal, Ananda Khadka, Prakash Lamichhane, Amul Kumar Acharya"
+  date: "2024-02-15"
+  file_size: "142.63 KB"
+  doi: "10.6084/m9.figshare.25225511"
+
+- title: "Plot level forest AGB estimates from Nepal's national forest inventory (2010-2014)"
+  creators: "Shiva Khanal"
+  date: "2023-06-23"
+  file_size: "114.84 KB"
+
+- title: "Data contribution to GEO Mountains General Inventory"
+  date: "2023"
+  url: "https://geomountains.org/resources-outputs/portals-inventories/general-inventory/"
+
+- title: "Quantification of soil organic carbon stocks in Nepal's forests"
+  creators: "Shiva Khanal, Rachael H. Nolan, Belinda E. Medlyn, Matthias M Boer"
+  date: "2023-02-22"
+  file_size: "667.34 MB"
+  doi: "10.6084/m9.figshare.22140233"
+
+- title: "Plot-level estimates of aboveground biomass and soil organic carbon stocks from Nepal’s forest inventory"
+  creators: "Shiva Khanal, Matthias M Boer"
+  date: "2023-01-26"
+  file_size: "105.57 KB"
+  doi: "10.6084/m9.figshare.21959636"
+
+- title: "High resolution maps of potential and actual forest aboveground biomass in the Central Himalayas, Nepal"
+  creators: "Shiva Khanal"
+  date: "2023-01-25"
+  file_size: "2.14 GB"
+  doi: "10.6084/m9.figshare.21952865"
+
+- title: "Local Level Municipal Forest Cover Map Data Series (2020–2021)"
+  creators: "Shiva Khanal, Amul Kumar Acharya, D. K. Kharal"
+  date: "2020"
+  url: "https://www.researchgate.net/profile/Shiva-Khanal-2/research"
+  note: "Covers 2020–2021"

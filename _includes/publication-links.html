@@ -10,7 +10,7 @@
     <li><a class="pub-link pub-link--doi" href="{{ doi_url }}"><span class="pub-link__tag">DOI</span>{{ pub.doi }}</a></li>
   {% endif %}
   {% if pub.paperurl and pub.paperurl != doi_url %}
-    <li><a class="pub-link" href="{{ pub.paperurl }}"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Journal page</a></li>
+    <li><a class="pub-link" href="{{ pub.paperurl }}"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>{% if pub.category == "conferences" %}Abstract{% else %}Journal page{% endif %}</a></li>
   {% endif %}
   {% if pub.pdfurl %}
     <li><a class="pub-link" href="{{ pub.pdfurl }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a></li>
