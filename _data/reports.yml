@@ -1,5 +1,11 @@
 # Contributed reports, newest first. Shown on the Publications page ("Reports" tab) and the CV.
-# Fields: title, date (YYYY-MM), publisher, affiliation, isbn, doi, report_number, url
+# Fields: title, date (YYYY, YYYY-MM), publisher, affiliation, isbn, doi, report_number, url, news_url
+- title: "NDC 3.0 Technical Report"
+  date: "2026"
+  publisher: "Government of Nepal, Ministry of Forests and Environment"
+  url: "https://giwmscdntwo.gov.np/media/pdf_upload/GoN_MoFE_NDC%203.0%20Technical%20Report_2026_web_jxmcfzi.pdf"
+  news_url: "https://www.ecospherenews.com/detail/1854"
+
 - title: "Allometric Equations for Seven Major Tree Species of Nepal"
   date: "2025-11"
   publisher: "Forest Research and Training Center, Nepal"

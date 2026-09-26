@@ -6,10 +6,11 @@
     <p class="pub__citation">
       {% include fuzzy-date.html date=item.date %}{% if item.publisher %}. {{ item.publisher }}{% endif %}{% if item.affiliation %}. Affiliation: {{ item.affiliation }}{% endif %}{% if item.report_number %}. Report number {{ item.report_number }}{% endif %}{% if item.isbn %}. ISBN {{ item.isbn }}{% endif %}.
     </p>
-    {% if item.doi or item.url %}
+    {% if item.doi or item.url or item.news_url %}
     <ul class="pub-links">
       {% if item.doi %}<li><a class="pub-link pub-link--doi" href="https://doi.org/{{ item.doi }}"><span class="pub-link__tag">DOI</span>{{ item.doi }}</a></li>{% endif %}
       {% if item.url %}{% assign ext = item.url | slice: -4, 4 | downcase %}<li><a class="pub-link" href="{{ item.url }}">{% if ext == ".pdf" %}<i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF{% elsif item.url contains "researchgate.net" %}<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>ResearchGate{% else %}<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>View{% endif %}</a></li>{% endif %}
+      {% if item.news_url %}<li><a class="pub-link" href="{{ item.news_url }}"><i class="fa-solid fa-newspaper" aria-hidden="true"></i>News coverage</a></li>{% endif %}
     </ul>
     {% endif %}
   </div>
