@@ -1,0 +1,1 @@
+{% comment %} Formats "YYYY", "YYYY-MM" or "YYYY-MM-DD" text as "2023", "November 2025" or "15 February 2024" {% endcomment %}{% assign d = include.date | append: "" %}{% if d.size == 4 %}{{ d }}{% elsif d.size == 7 %}{{ d | append: "-01" | date: "%B %Y" }}{% else %}{{ d | date: "%-d %B %Y" }}{% endif %}

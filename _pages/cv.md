@@ -42,6 +42,24 @@ redirect_from:
 </section>
 
 <section class="cv-section">
+<h2 class="archive__subtitle">Contributed reports</h2>
+<ul class="cv-list">
+{% for item in site.data.reports %}
+  <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% elsif item.doi %}<a href="https://doi.org/{{ item.doi }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}{% if item.publisher %}. {{ item.publisher }}{% endif %}, {% include fuzzy-date.html date=item.date %}.</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="cv-section">
+<h2 class="archive__subtitle">Data</h2>
+<ul class="cv-list">
+{% for item in site.data.datasets %}
+  <li>{% if item.doi %}<a href="https://doi.org/{{ item.doi }}">{{ item.title }}</a>{% elsif item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}{% if item.creators %}. {{ item.creators }}{% endif %}, {{ item.date | slice: 0, 4 }}.</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="cv-section">
 <h2 class="archive__subtitle">Presentations</h2>
 <ul class="cv-list">
 {% for post in site.talks reversed %}

@@ -1,0 +1,40 @@
+# Contributed reports, newest first. Shown on the Publications page ("Reports" tab) and the CV.
+# Fields: title, date (YYYY-MM), publisher, affiliation, isbn, doi, report_number, url
+- title: "Allometric Equations for Seven Major Tree Species of Nepal"
+  date: "2025-11"
+  publisher: "Forest Research and Training Center, Nepal"
+  isbn: "978-9937-1-9404-4"
+  url: "https://www.researchgate.net/publication/400311337_Allometric_Equations_for_Seven_Major_Tree_Species_of_Nepal"
+
+- title: "National MRV Framework: Tracking and Communicating Climate Action Transparently"
+  date: "2025-11"
+  affiliation: "Ministry of Forests and Soil Conservation, Nepal"
+  doi: "10.13140/RG.2.2.13857.06240"
+
+- title: "Nepal. 2024 Biennial Transparency Report (BTR)"
+  date: "2025-05"
+  doi: "10.13140/RG.2.2.28673.11369"
+
+- title: "National Land Cover Monitoring System of Nepal"
+  date: "2022-09"
+  affiliation: "Environmental Research and Training Center"
+  doi: "10.13140/RG.2.2.23239.05282"
+
+- title: "National Level Forests and Land Cover Analysis of Nepal using Google Earth Images"
+  date: "2019-10"
+  publisher: "Ministry of Forests and Environment"
+  url: "https://www.researchgate.net/publication/336769696_National_Level_Forests_and_Land_Cover_Analysis_of_Nepal_using_Google_Earth_Images_Ministry_of_Forests_and_Environment"
+
+- title: "Forest Cover Maps of Local Levels (753) of Nepal"
+  date: "2018-06"
+  publisher: "Government of Nepal, Ministry of Forests and Soil Conservation, Department of Forest Research and Survey"
+
+- title: "Forests and Watershed Profile of Local Level (744) Structure of Nepal"
+  date: "2017-07"
+  publisher: "Government of Nepal, Ministry of Forests and Soil Conservation"
+  url: "https://www.researchgate.net/publication/325542111_Forests_and_Watershed_Profile_of_Local_Level_744_Structure_of_Nepal_Government_of_Nepal_Ministry_of_Forests_and_Soil_Conservation"
+
+- title: "State of Nepal's Forests"
+  date: "2015-12"
+  report_number: "5"
+  doi: "10.13140/RG.2.2.34812.28800/1"

@@ -3,16 +3,23 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
-description: "Peer-reviewed publications by Shiva Khanal on forest carbon, soil organic carbon, forest biomass mapping, and fire ecology in Nepal and Australia."
+description: "Peer-reviewed articles, contributed reports and published datasets by Shiva Khanal on forest carbon, land cover, climate transparency and fire ecology in Nepal and Australia."
 ---
 
 {% include base_path %}
 
 <p class="page__lead-note">
-  Peer-reviewed articles, newest first. My name is shown in <strong class="pub__me">bold</strong>.
+  Peer-reviewed articles, contributed reports and published data, newest first. My name is shown in <strong class="pub__me">bold</strong>.
   {% if site.author.googlescholar %}A full list is on <a href="{{ site.author.googlescholar }}">Google Scholar</a>{% if site.author.orcid %} and <a href="{{ site.author.orcid }}">ORCID</a>{% endif %}.{% endif %}
 </p>
 
+<div class="pub-tabs" role="tablist" aria-label="Publication types" hidden>
+  <button type="button" role="tab" id="tab-articles" aria-controls="articles" aria-selected="true">Journal articles <span class="pub-tabs__count">{{ site.publications.size }}</span></button>
+  <button type="button" role="tab" id="tab-reports" aria-controls="reports" aria-selected="false" tabindex="-1">Reports <span class="pub-tabs__count">{{ site.data.reports.size }}</span></button>
+  <button type="button" role="tab" id="tab-data" aria-controls="data" aria-selected="false" tabindex="-1">Data <span class="pub-tabs__count">{{ site.data.datasets.size }}</span></button>
+</div>
+
+<section id="articles" class="pub-panel" role="tabpanel" aria-labelledby="tab-articles">
 {% if site.publication_category %}
   {% for category in site.publication_category %}
     {% assign title_shown = false %}
@@ -32,3 +39,62 @@ description: "Peer-reviewed publications by Shiva Khanal on forest carbon, soil 
     {% include publication-entry.html %}
   {% endfor %}
 {% endif %}
+</section>
+
+<section id="reports" class="pub-panel" role="tabpanel" aria-labelledby="tab-reports">
+  <h2 class="archive__subtitle">Contributed Reports</h2>
+  {% for item in site.data.reports %}
+    {% include report-entry.html item=item %}
+  {% endfor %}
+</section>
+
+<section id="data" class="pub-panel" role="tabpanel" aria-labelledby="tab-data">
+  <h2 class="archive__subtitle">Data</h2>
+  {% for item in site.data.datasets %}
+    {% include dataset-entry.html item=item %}
+  {% endfor %}
+</section>
+
+<script>
+  /* Turn the three sections into tabs. Without JavaScript all sections stay visible, one after another. */
+  (function () {
+    var list = document.querySelector(".pub-tabs");
+    if (!list) { return; }
+    var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+    var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute("aria-controls")); });
+
+    function select(i, focus, updateHash) {
+      tabs.forEach(function (t, j) {
+        var on = i === j;
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        panels[j].hidden = !on;
+      });
+      if (focus) { tabs[i].focus(); }
+      if (updateHash && window.history && history.replaceState) {
+        history.replaceState(null, "", i === 0 ? location.pathname : "#" + panels[i].id);
+      }
+    }
+
+    list.hidden = false;
+    document.documentElement.classList.add("pub-tabs-ready");
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { select(i, false, true); });
+      t.addEventListener("keydown", function (e) {
+        var k = e.key, n = tabs.length;
+        if (k === "ArrowRight") { select((i + 1) % n, true, true); e.preventDefault(); }
+        else if (k === "ArrowLeft") { select((i - 1 + n) % n, true, true); e.preventDefault(); }
+        else if (k === "Home") { select(0, true, true); e.preventDefault(); }
+        else if (k === "End") { select(n - 1, true, true); e.preventDefault(); }
+      });
+    });
+
+    function fromHash() {
+      var id = location.hash.replace("#", "");
+      var i = panels.findIndex(function (p) { return p.id === id; });
+      select(i < 0 ? 0 : i, false, false);
+    }
+    window.addEventListener("hashchange", fromHash);
+    fromHash();
+  })();
+</script>
