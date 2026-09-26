@@ -29,7 +29,7 @@ layout: default
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
         {% assign talk_date = page.modified | default: page.date %}
         {% if talk_date %}
-          <p class="page__meta page__meta--post"><i class="fa-solid fa-calendar" aria-hidden="true"></i> <time datetime="{{ talk_date | date_to_xmlschema }}">{{ talk_date | date: "%B %-d, %Y" }}</time>{% if page.location %}<span aria-hidden="true"> &middot; </span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ page.location }}{% endif %}</p>
+          <p class="page__meta page__meta--post"><i class="fa-solid fa-calendar" aria-hidden="true"></i> <time datetime="{{ talk_date | date_to_xmlschema }}">{% if page.date_label %}{{ page.date_label }}{% else %}{{ talk_date | date: "%B %-d, %Y" }}{% endif %}</time>{% if page.location %}<span aria-hidden="true"> &middot; </span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ page.location }}{% endif %}</p>
         {% endif %}
         {% if page.venue %}<p class="talk__venue">{% assign talk_kind = page.type | default: page.talk_type %}{% if talk_kind %}<span class="talk__type">{{ talk_kind }}</span> {% endif %}{{ page.venue }}</p>{% endif %}
         </header>
