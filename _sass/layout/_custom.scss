@@ -633,7 +633,8 @@ a.pub-link,
 }
 
 /* With tabs active, the tab label already names the section */
-.pub-tabs-ready .pub-panel > h2.archive__subtitle:first-child {
+.pub-tabs-ready #reports > h2.archive__subtitle:first-child,
+.pub-tabs-ready #data > h2.archive__subtitle:first-child {
   display: none;
 }
 

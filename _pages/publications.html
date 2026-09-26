@@ -9,12 +9,12 @@ description: "Peer-reviewed articles, contributed reports and published datasets
 {% include base_path %}
 
 <p class="page__lead-note">
-  Peer-reviewed articles, contributed reports and published data, newest first. My name is shown in <strong class="pub__me">bold</strong>.
+  Journal articles, conference papers, contributed reports and published data, newest first. My name is shown in <strong class="pub__me">bold</strong>.
   {% if site.author.googlescholar %}A full list is on <a href="{{ site.author.googlescholar }}">Google Scholar</a>{% if site.author.orcid %} and <a href="{{ site.author.orcid }}">ORCID</a>{% endif %}.{% endif %}
 </p>
 
 <div class="pub-tabs" role="tablist" aria-label="Publication types" hidden>
-  <button type="button" role="tab" id="tab-articles" aria-controls="articles" aria-selected="true">Journal articles <span class="pub-tabs__count">{{ site.publications.size }}</span></button>
+  <button type="button" role="tab" id="tab-articles" aria-controls="articles" aria-selected="true">Articles &amp; papers <span class="pub-tabs__count">{{ site.publications.size }}</span></button>
   <button type="button" role="tab" id="tab-reports" aria-controls="reports" aria-selected="false" tabindex="-1">Reports <span class="pub-tabs__count">{{ site.data.reports.size }}</span></button>
   <button type="button" role="tab" id="tab-data" aria-controls="data" aria-selected="false" tabindex="-1">Data <span class="pub-tabs__count">{{ site.data.datasets.size }}</span></button>
 </div>
