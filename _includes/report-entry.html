@@ -9,7 +9,7 @@
     {% if item.doi or item.url %}
     <ul class="pub-links">
       {% if item.doi %}<li><a class="pub-link pub-link--doi" href="https://doi.org/{{ item.doi }}"><span class="pub-link__tag">DOI</span>{{ item.doi }}</a></li>{% endif %}
-      {% if item.url %}<li><a class="pub-link" href="{{ item.url }}"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>{% if item.url contains "researchgate.net" %}ResearchGate{% else %}View{% endif %}</a></li>{% endif %}
+      {% if item.url %}{% assign ext = item.url | slice: -4, 4 | downcase %}<li><a class="pub-link" href="{{ item.url }}">{% if ext == ".pdf" %}<i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF{% elsif item.url contains "researchgate.net" %}<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>ResearchGate{% else %}<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>View{% endif %}</a></li>{% endif %}
     </ul>
     {% endif %}
   </div>
