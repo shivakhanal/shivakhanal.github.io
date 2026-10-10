@@ -8,7 +8,7 @@ tags: [APN, Mitra-Award, global-change, remote-sensing, OBIA, machine-learning, 
 In 2015 I received the **Mitra Award for Global Change Research** from the [Asia-Pacific Network for Global Change Research (APN)](https://www.apn-gcr.org/), while working at the Department of Forest Research and Survey, Kathmandu, Nepal. The award was presented in conjunction with the 20th APN Intergovernmental Meeting and Scientific Planning Group (IGM/SPG) Meeting, hosted by the Government of Nepal in Kathmandu from 25 to 27 March 2015, where I presented my work on [*Integration of object-based image analysis with machine learning algorithm for forest type classification in Nepal*](https://www.apn-gcr.org/wp-content/uploads/2020/09/20IGM-NS06-Khanal.pdf).
 
 <!-- Copy the image of the report page into /images/ as mitra-award-2015.jpg (or change the filename below). -->
-![Mitra Award feature in the APN Annual Report 2014–2015](/images/mitra-award-2015.jpg){: width="600"}
+![Mitra Award feature in the APN Annual Report 2014–2015](/images/mitra-award-2015.JPG){: width="600"}
 
 *The Mitra Award feature in the APN Annual Report 2014–2015 (p. 59).*
 
