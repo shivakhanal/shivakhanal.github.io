@@ -20,9 +20,6 @@ Search your repo for the string `TODO` to find every spot below.
 - Publication `releaseDate` (exact dates)
 - Presentation `date` (exact date)
 
-## _publications/2026-01-01-forest-glacier-central-himalaya.md
-- Confirm exact publication date, update the filename and `date:` field to match
-
 ## _publications/2026-07-01-post-fire-canopy-recovery-eucalypt.md
 - Confirm exact publication date
 
