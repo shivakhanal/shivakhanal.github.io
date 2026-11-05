@@ -1,5 +1,5 @@
 ---
-title: "New paper: topoclimatic factors and carbon-dense forests in the Central Himalayas"
+title: "Topoclimatic factors and carbon-dense forests in the Central Himalayas"
 date: 2025-10-09
 collection: publications
 category: manuscripts
