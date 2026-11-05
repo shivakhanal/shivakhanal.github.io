@@ -1,11 +1,9 @@
 name: Scrape Talk Locations
 
+# Manual only: the talk map is not shown on the site (talkmap_link: false in
+# _config.yml). Run it from the Actions tab if the map is ever re-enabled.
 on:
-  push:
-    paths:
-      - 'talks/**'
-      - '_talks/**'
-      - 'talkmap.ipynb'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,9 +15,9 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.9'   # Specify the Python version you need
+        python-version: '3.11'  # python-frontmatter needs Python 3.10+
 
     - name: Install dependencies
       run: |

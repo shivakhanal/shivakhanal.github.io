@@ -6,18 +6,28 @@
   {% assign title = post.title %}
 {% endif %}
 
-{% comment %} Thumbnail: header teaser if set, otherwise the first image in the post {% endcomment %}
+{% comment %} Thumbnail: header teaser if set, otherwise the first image in the post (ignoring commented-out images) {% endcomment %}
 {% assign thumb = nil %}
+{% assign scan = "" %}
+{% assign scan_parts = post.content | split: "<!--" %}
+{% for part in scan_parts %}
+  {% if forloop.first %}
+    {% assign scan = scan | append: part %}
+  {% else %}
+    {% assign after_comment = part | split: "-->" %}
+    {% if after_comment.size > 1 %}{% assign scan = scan | append: after_comment[1] %}{% endif %}
+  {% endif %}
+{% endfor %}
 {% if post.header.teaser %}
   {% assign thumb = post.header.teaser %}
   {% unless thumb contains "://" %}{% assign thumb = thumb | prepend: "/images/" | prepend: base_path %}{% endunless %}
-{% elsif post.content contains "<img" %}
-  {% assign img_parts = post.content | split: "<img" %}
+{% elsif scan contains "<img" %}
+  {% assign img_parts = scan | split: "<img" %}
   {% assign src_parts = img_parts[1] | split: 'src="' %}
   {% assign thumb = src_parts[1] | split: '"' | first %}
-{% elsif post.content contains "![" %}
+{% elsif scan contains "![" %}
   {% comment %} related posts arrive as unrendered Markdown {% endcomment %}
-  {% assign img_parts = post.content | split: "![" %}
+  {% assign img_parts = scan | split: "![" %}
   {% assign src_parts = img_parts[1] | split: "](" %}
   {% assign thumb = src_parts[1] | split: ")" | first | split: " " | first %}
 {% endif %}
